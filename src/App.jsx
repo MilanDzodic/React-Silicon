@@ -1,31 +1,33 @@
 import { useState } from 'react'
-import './App.css'
-import Header from './components/header'
-import Hero from './components/hero'
-import Brands from './components/brands'
-import Appfeatures from './components/Appfeatures'
+import './assets/css/styling.css'
+import Header from './components/Header'
+import Heros from './components/Heros'
+import Brands from './components/Brands'
+import Appfeatures from './components/AppFeatures'
 import HowWork from './components/HowWork'
 import MakeMoney from './components/MakeMoney'
 import Clientsloving from './components/Clientsloving'
 import Faq from './components/Faq'
-import Subscribe from './components/subscribe'
-import Footer from './components/footer'
+import Subscribe from './components/Subscribe'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header />
-      <Hero />
-      <Brands />
-      <Appfeatures />
-      <HowWork />
-      <MakeMoney />
-      <Clientsloving />
-      <Faq />
-      <Subscribe />
-      <Footer />
+      <div className="wrapper">
+        <Header />
+        <Heros />
+        <Brands />
+        <Appfeatures />
+        <HowWork />
+        <MakeMoney />
+        <Clientsloving />
+        <Faq />
+        <Subscribe />
+        <Footer />
+      </div>
     </>
   )
 }
