@@ -13,8 +13,8 @@ const Heros = () => {
           </div>
 
           <div className="content">
-            <p>We offer you a new generation of the mobile
-              banking. Save, spend & manage money in your pocket.</p>
+            <p>We offer you a new generation of the mobile banking.</p> 
+            <p>Save, spend & manage money in your pocket.</p>
             <div className="buttons">
               <a className="btn-downloadapp" href="#"><img src={Playstore} alt="Playstore" /></a>
               <a className="btn-downloadapp" href="#"><img src={Appstore} alt="Appstore" /></a>

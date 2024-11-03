@@ -242,7 +242,7 @@ header .container {
     background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
     padding-bottom: 1rem;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     @media (min-width: 768px) {
         padding-bottom: 0;
@@ -292,15 +292,15 @@ header .container {
         text-align: center;
 
         p {
+            text-align: left;
             font-size: 18px;
-            margin-bottom: 3rem;
-
         }
         
         .buttons {
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            margin-top: 3rem;
 
             @media (min-width: 1400px) {
                 flex-direction: row;
@@ -339,14 +339,14 @@ header .container {
         .img-back {
             position: absolute;
             z-index: -10;
-            bottom: -220px;
+            bottom: -207px;
             right: 100px;
             width: 70%;
             height: auto;
 
             @media (min-width: 1400px) {
                 width: 30%;
-                bottom: -268px;
+                bottom: -238px;
                 right: 90px;
             }
         }
@@ -354,14 +354,14 @@ header .container {
         .img-front {
             position: absolute;
             z-index: -5;
-            bottom: -205px;
+            bottom: -207px;
             right: 0;
             width: 70%;
             height: auto;
         
             @media (min-width: 1400px) {
                 width: 30%;
-                bottom: -250px;
+                bottom: -238px;
             }
         }
     }
