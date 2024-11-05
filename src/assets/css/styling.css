@@ -1217,6 +1217,7 @@ header .container {
     .contact {
         display: grid;
         place-items: center;
+        margin-bottom: 4rem;
 
         @media (min-width: 768px) {
             display: none;
@@ -1244,16 +1245,29 @@ header .container {
         padding: 2rem 1rem 2rem 1rem;
         border-radius: 0.5rem;
         background-color: var(--color-gray-100);
+        
 
         @media (min-width: 768px) {
-            display: flex;
             padding: 4rem 1.5rem;
             align-items: center;
+            width: 500px;
         }
 
         @media (min-width: 1400px) {
-            gap: 8rem;
+            gap: 2rem;
             padding: 5rem 7rem;
+            width: 700px;
+        }
+
+        span {
+            font-size: 0.8rem;
+            margin-top: -2rem;
+            margin-left: 0.5rem;
+            color: hsl(0, 100%, 40%);
+
+            @media (min-width: 768px) {
+                margin-top: -3rem;
+            }
         }
     }
 
@@ -1285,14 +1299,15 @@ header .container {
 
     .your-email {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
 
         .email {
+            flex: 1;
             width: 184px;
             border: 1px solid #E2E5F1;
             border-radius: 0.5rem 0 0 0.5rem;
             padding-left: 2.2rem;
-            background-image: url('./Images/Subscribe\ mail\ ikon.svg');
+            background-image: url('../Images/SubscribeMailIcon.svg');
             background-repeat: no-repeat;
             background-position: 10px;
 
@@ -1312,6 +1327,14 @@ header .container {
             padding-left: 2rem;
             padding-right: 2rem;
         }
+    }
+
+    .informationbox {
+        display: none;
+    }
+
+    btn-green {
+        background-color: green;
     }
 }
 
