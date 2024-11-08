@@ -4,6 +4,7 @@ import MakeYourMoneyOuterFirst from "../assets/Images/MakeYourMoneyOuterFirst.sv
 import MakeYourMoneyInnerSecond from "../assets/Images/MakeYourMoneyInnerSecond.svg"
 import MakeYourMoneyOuterSecond from "../assets/Images/MakeYourMoneyOuterSecond.svg"
 import RegularCashback from "../assets/Images/RegularCashback.svg"
+import EasyPayments from "../assets/Images/EasyPayments.svg"
 
 
 const MakeMoney = () => {
@@ -55,7 +56,7 @@ const MakeMoney = () => {
 
             <div className="containz">
               <div className="flex">
-                <img src="/Images/Easy Paments.svg" alt=""></img> <img src={RegularCashback} alt="" />
+                <img src={EasyPayments} alt="" />  <img src={RegularCashback} alt="" />
               </div>
 
               <div className="flexy">
