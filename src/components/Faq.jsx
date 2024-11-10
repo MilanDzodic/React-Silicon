@@ -21,7 +21,7 @@ const Faq = () => {
     <>
       <section id="faq">
         <div className="container">
-          <div class="contain-tablet">
+          <div class="contain-desktop">
             <h1 class="headline">
                 Any questions? Check out the FAQs
             </h1>
@@ -55,7 +55,7 @@ const Faq = () => {
             }
           </div>
 
-          <div class="contain-desktop">
+          <div class="contain-tablet">
             <div class="contain-both">
               <div class="contain-phone">
                 <img src={FAQPhoneIcon} alt="" />

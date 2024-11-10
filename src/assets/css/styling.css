@@ -917,7 +917,7 @@ header .container {
         @media (min-width: 1400px) {
             display: flex;
             align-items: flex-start;
-            gap: 10rem;
+            column-gap: 10rem;
         }
     }
 
@@ -949,91 +949,85 @@ header .container {
             text-align: start;
         }
     }
+
+    .btn-chevron {
+        background-color: #F3F6FF;
+        border: 0;
+        width: 40px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        transition: all 225ms;
+     }
+     
+     .question:hover .btn-chevron {
+        background-color: hsla(208, 52%, 74%, 0.733);
+     }
+
+     .open .question:hover .btn-chevron {
+        background-color: hsl(239, 84%, 62%);
+     }
     
-    h3 {
+    .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        gap: 2rem;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+            gap: 0;
+        }
+    }
+
+    .answer {
+        display: none;
+        font-size: 14px;
+    }
+
+    .open .answer {
+         display: block;
     }
     
-    p {
-        font-size: 14px;
+    .open .btn-chevron {
+        background-color: #6366F1;
+        transform: rotate(180deg);
+        color: #fff;
     }
     
     .contain {
         display: grid;
         align-items: center;
         gap: 1rem;
-        justify-content: space-evenly;
-        border: 1px solid #E2E5F1;
         border-top: 0;
         padding: 1rem;
-        margin-top: -1rem;
-
-        @media (min-width: 768px) {
-            margin: 0;
-            border: none;
-            box-shadow: 0 3px 5px #8c8c8d2c;
-            border-radius: 0.5rem;
-        }
+        margin: 0;
+        border: none;
+        box-shadow: 0 3px 5px #8c8c8d2c;
+        border-radius: 0.5rem;
     }
+    
     .contain-tablet {
-        display: grid;
-        gap: 1rem;
-        place-content: center;
-        justify-content: space-evenly;
-
-        .contain-both {
-            display: none;
-        }
-
-        @media (min-width: 768px) {
-            gap: 2rem;
-        }
-
-        @media (min-width: 1400px) {
-            .contain-both {
-                display: flex;
-                gap: 1rem;
-            }
-
-            .contain-phone, .contain-chat {
-                display: grid;
-                gap: 1rem;
-                padding: 1rem;
-                border: 1px solid #E2E5F1;
-                border-radius: 0.5em;
-            }
-
-            .contain-phone{
-                .phone {
-                    color: var(--color-primary);
-                }
-            }
-
-            .contain-chat {
-                .chat {
-                    color:var(--color-success);
-                }
-            }
-        }   
-    }
-
-    .contain-desktop {
         display: grid;
         gap: 1rem;
         
         .contain-both {
             display: none;
         }
-
+        
         @media (min-width: 768px) {
             .contain-both {
                 display: flex;
-                gap: 1rem;
+                gap: 2rem;
                 margin-top: 1rem;
                 justify-content: space-between;
             }
-
+            
             .contain-phone, .contain-chat {
                 display: grid;
                 gap: 1rem;
@@ -1041,29 +1035,67 @@ header .container {
                 border: 1px solid #E2E5F1;
                 border-radius: 0.5em;
             }
-
+            
             .contain-phone{
                 .phone {
                     color: var(--color-primary);
                 }
             }
-
+            
             .contain-chat {
                 .chat {
                     color:var(--color-success);
                 }
             }
         }
-
+        
         @media (min-width: 1400px) {
             .contain-both {
                 display: none;
             }
         }
     }
+    
+    
+    
+}
+.contain-desktop {
+    display: grid;
+    gap: 1rem;
+    place-content: center;
+    justify-content: space-evenly;
 
+    .contain-both {
+        display: none;
+    }
 
+    @media (min-width: 1400px) {
+        .contain-both {
+            display: flex;
+            gap: 1rem;
+        }
 
+        .contain-phone, .contain-chat {
+            display: grid;
+            gap: 1rem;
+            padding: 1rem;
+            width: 156px;
+            border: 1px solid #E2E5F1;
+            border-radius: 0.5em;
+        }
+
+        .contain-phone{
+            .phone {
+                color: var(--color-primary);
+            }
+        }
+
+        .contain-chat {
+            .chat {
+                color:var(--color-success);
+            }
+        }
+    }   
 }
 
 #subscribe {
