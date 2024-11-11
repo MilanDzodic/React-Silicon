@@ -21,30 +21,30 @@ const Faq = () => {
     <>
       <section id="faq">
         <div className="container">
-          <div class="contain-desktop">
-            <h1 class="headline">
+          <div className="contain-desktop">
+            <h1 className="headline">
                 Any questions? Check out the FAQs
             </h1>
 
-            <h2 class="sub-headline">
+            <h2 className="sub-headline">
                 Still have unanswered questions and need to get in touch?
             </h2>
 
-            <div class="contain-both">
-              <div class="contain-phone">
+            <div className="contain-both">
+              <div className="contain-phone">
                 <img src={FAQPhoneIcon} alt="" />
 
                 <p>Still have questions?</p>
 
-                <a class="phone" href="#">Contact us <i class="fa-regular fa-arrow-right"></i></a>
+                <a className="phone" href="#">Contact us <i className="fa-regular fa-arrow-right"></i></a>
             </div>
 
-            <div class="contain-chat">
+            <div className="contain-chat">
                 <img src={FAQChatIcon} alt="" />
 
                 <p>Don't like phone calls?</p>
 
-                <a class="chat" href="#">Contact us <i class="fa-regular fa-arrow-right"></i> </a>
+                <a className="chat" href="#">Contact us <i className="fa-regular fa-arrow-right"></i> </a>
               </div>
             </div>
           </div>
@@ -55,22 +55,22 @@ const Faq = () => {
             }
           </div>
 
-          <div class="contain-tablet">
-            <div class="contain-both">
-              <div class="contain-phone">
+          <div className="contain-tablet">
+            <div className="contain-both">
+              <div className="contain-phone">
                 <img src={FAQPhoneIcon} alt="" />
 
                 <p>Still have questions?</p>
 
-                <a class="phone" href="#">Contact us <i class="fa-regular fa-arrow-right"></i></a>
+                <a className="phone" href="#">Contact us <i className="fa-regular fa-arrow-right"></i></a>
               </div>
 
-              <div class="contain-chat">
+              <div className="contain-chat">
                 <img src={FAQChatIcon} alt="" />
 
                 <p>Don't like phone calls?</p>
 
-                <a class="chat" href="#">Contact us <i class="fa-regular fa-arrow-right"></i> </a>
+                <a className="chat" href="#">Contact us <i className="fa-regular fa-arrow-right"></i> </a>
               </div>
             </div>
           </div>
