@@ -1,64 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-:root[data-theme="light"] {
-     --theme-primary-color-1: #4f5955;
-    --theme-primary-color-2: #535656;
-    --theme-primary-color-3: #606966;
-    --theme-primary-color-4: #9C9EA6;
-    --theme-primary-color-1-a: rgba(79, 89, 85, 0.60);
-    --theme-primary-color-2-a: rgba(83, 86, 86, 0.40);
-    --theme-primary-color-3-a: rgba(156, 158, 166, 0.40); 
-    --theme-primary-color-4-a: rgba(156, 158, 166, 0.40);
-    --theme-secondary-color-1: #D9C3A9;
-    --theme-secondary-color-2: #F2EDDC;
-    --theme-secondary-color-1-a: rgba(217, 195, 169, 0.40); 
-    --theme-secondary-color-2-a: rgba(242, 237, 220, 0.40);
-    --theme-dark-color-1: #000000;
-    --theme-dark-color-2: #0E0E0E;
-    --theme-dark-color-3: #171717;
-    --theme-dark-color-1-a:rgba(0, 0, 0, 0.40);
-    --theme-dark-color-2-a:rgba(14, 14, 14, 0.40);
-    --theme-dark-color-3-a:rgba(23, 23, 23, 0.40); 
-    --theme-dark-color-4-a:rgba(23, 23, 23, 0.10);
-    --theme-light-color-1: #FFFFFF;
-    --theme-light-color-2: #FAFAFA;
-    --theme-light-color-3: #F7F7F7;
-    --theme-light-color-4: #EAEAEA;
-    --theme-light-color-1-a: rgba(255, 255, 255, 0.40); 
-    --theme-light-color-2-a: rgba(250, 250, 250, 0.40); 
-    --theme-light-color-3-a: rgba(247, 247, 247, 0.40);
-    --theme-light-color-4-a: rgba(234, 234, 234, 0.40);
+:root[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
 }
 
-:root[data-theme="dark"] {
-    --theme-primary-color-1: #4f5955;
-    --theme-primary-color-2: #535656;
-    --theme-primary-color-3: #606966;
-    --theme-primary-color-4: #9C9EA6;
-    --theme-primary-color-1-a: rgba(79, 89, 85, 0.60);
-    --theme-primary-color-2-a: rgba(83, 86, 86, 0.40);
-    --theme-primary-color-3-a: rgba(156, 158, 166, 0.40); 
-    --theme-primary-color-4-a: rgba(156, 158, 166, 0.40);
-    --theme-secondary-color-1: #D9C3A9;
-    --theme-secondary-color-2: #F2EDDC;
-    --theme-secondary-color-1-a: rgba(217, 195, 169, 0.40); 
-    --theme-secondary-color-2-a: rgba(242, 237, 220, 0.40);
-    --theme-dark-color-1: #000000;
-    --theme-dark-color-2: #0E0E0E;
-    --theme-dark-color-3: #171717;
-    --theme-dark-color-1-a:rgba(0, 0, 0, 0.40);
-    --theme-dark-color-2-a:rgba(14, 14, 14, 0.40);
-    --theme-dark-color-3-a:rgba(23, 23, 23, 0.40); 
-    --theme-dark-color-4-a: rgba(23, 23, 23, 0.10);
-    --theme-light-color-1: #000000;
-    --theme-light-color-2: #0E0E0E;
-    --theme-light-color-3: #171717;
-    --theme-light-color-4: #171717;
-    --theme-light-color-1-a: rgba(0, 0, 0, 0.40);
-    --theme-light-color-2-a: rgba(14, 14, 14, 0.40);
-    --theme-light-color-3-a: rgba(23, 23, 23, 0.40);
-    --theme-light-color-4-a: rgba(23, 23, 23, 0.10);
+:root[data-theme="light"] {
+    --background-color: #ffffff;
+    --text-color: #000000;
 }
+
 
 :root {
     --color-dark: #0B0F19;
@@ -88,6 +39,8 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
+    background-color: var(--background-color);
+    color:var(--text-color);
 }
 
 .wrapper {
