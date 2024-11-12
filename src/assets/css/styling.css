@@ -845,72 +845,37 @@ header .container {
     
     display: none;
     background-color: var(--color-gray-100);
+    padding-top: 2rem;
     
 
     @media (min-width: 1400px) {
         display: grid;
+        align-items: end;
     }
-    
-    .container {
-        display: grid;
-        gap: 2rem;
-        height: 35rem;
-        padding-top: 6rem;
-
-        grid-template-areas: "headline images-1 images-2";
-        grid-template-columns: 1fr 2fr 2fr;
-    }    
   
     .headline {
-        grid-area: headline;
         font-size: 40px;
         font-weight: 800;
-        width: 20rem;
-        height: 80%;
-        margin-right: 5rem;
+        margin-bottom: 2rem;
     }
 
-    .images-1 {
-        grid-area: images-1;
-        position: relative;
-        right: 0;
-    
-        #inner-first {
-            position: absolute;
-            z-index: 5;
-            bottom: -140px;
-            height: auto;
-        }
-
-        #outer-first {
-            position: absolute;
-            z-index: 10;
-            bottom: 170px;
-            height: auto;
-            left: 1.5rem;
-        }
+    .tja {
+        margin-bottom: -1rem;
     }
 
-    .images-2 {
-        grid-area: images-2;
-        position: relative;
-        right: 0;
+    .testimonials {
+        display: grid;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
 
-        #inner-second {
-            position: absolute;
-            z-index: 5;
-            bottom: -140px;
-            height: auto;
-        }
+    .tjabba {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 
-        #outer-second {
-            position: absolute;
-            z-index: 10;
-            bottom: 170px;
-            height: auto;
-            left: 1.5rem;
-        }
-    }            
 }
 
 #faq {
