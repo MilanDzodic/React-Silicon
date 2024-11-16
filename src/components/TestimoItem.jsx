@@ -7,9 +7,6 @@ const TestimoItem = ({ item }) => {
 
   return (
     <div className="testimonials">
-      <div className="comment">
-        <p>{item.comment}</p>
-      </div>
 
       <div className="tjabba">
         <div className="starrating">
@@ -17,7 +14,7 @@ const TestimoItem = ({ item }) => {
         </div>
 
         <div className="avatarurl">
-          <img src={item.avatarUrl}/>
+          <img src={item.avatarUrl} />
         </div>
         
         <div className="author">
@@ -29,6 +26,9 @@ const TestimoItem = ({ item }) => {
         </div>
       </div>
 
+      <div className="comment">
+        <p>{item.comment}</p>
+      </div>
     </div>
   )
 }

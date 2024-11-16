@@ -54,7 +54,7 @@ const Subscribe = () => {
 
   if (submitted) {
     return (
-      <div className="informationbox">
+      <div className="informbox">
         <h1>Thanks for applying to our newsletter</h1>
         <p>We have sent you a confirmation email</p>
         <button className="btn-green" onClick={handleOk}>OK</button>

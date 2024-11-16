@@ -1203,8 +1203,9 @@ header .container {
         }
     }
 
-    .informationbox {
-        display: none;
+    .informbox {
+        display: grid;
+        align-items: center;
     }
 
     btn-green {
